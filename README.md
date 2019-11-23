@@ -40,3 +40,19 @@ inspec exec https://github.com/dev-sec/linux-baseline
 
 run specific control:
 inspec exec  https://github.com/dev-sec/linux-baseline --controls package-08
+
+You detected issues both by running InSpec locally and by running InSpec remotely on a target system.
+You downloaded a basic InSpec profile and used a community profile from Chef Supermarket.
+You limited your InSpec runs to certain controls and formatted the output as JSON so you can generate reports.
+You packaged your profile to make it easier to distribute.
+
+Resources:
+https://www.inspec.io/docs/
+https://dev-sec.io/
+
+
+inspec.yml -->includes the profile description (required)
+controls --->is the directory in which all tests are located (required)
+libraries---> is the directory in which all Chef InSpec resource extensions are located (optional)
+files---> is the directory with additional files that a profile can access (optional)
+README.md--->should be used to explain the profile, its scope, and usage
