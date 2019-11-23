@@ -92,3 +92,13 @@ The <expectation> part specifies the desired result or expected state.
  example, that a port should be open
 
 https://www.inspec.io/docs/reference/matchers/
+
+
+Complience test are  written in Inspec
+What cookbook can be used to send compliance data to compliance server during a chef-client run?:
+Audit cookbook
+
+Where are compliance profiles stored?:
+On Chef Automate Compliance server.
+/var/chef/cache/cookbooks/audit/recipes/default.rb
+
