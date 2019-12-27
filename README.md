@@ -102,3 +102,27 @@ Where are compliance profiles stored?:
 On Chef Automate Compliance server.
 /var/chef/cache/cookbooks/audit/recipes/default.rb
 
+inspec compliance profile
+
+inspec compilance upload my-apache/
+
+inspec vendor --overwrite my-apache/
+inspec  compliance upload profile_name
+
+Alternatively, you can run inspec archive to package your profile as a .tar or .zip file and then upload that file through the Chef Automate web interface.
+
+https://learn.chef.io/tracks/compliance-automation#/
+
+https://github.com/learn-chef/my-apache
+
+https://learn.chef.io/modules/create-a-custom-profile#/
+
+
+require_control'' do
+  control 'name'
+end
+it is used for importing one or more profiles.
+
+include_control '' do
+
+it is used to include all controls.
